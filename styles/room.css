@@ -1,3 +1,13 @@
+#logo{
+  font-size: 25px;
+}
+
+.unite-logo{
+  display: flex;
+  margin-right: -19px;
+  margin-bottom: 10px;
+}
+
 .container {
   margin-top: 74px;
   height: clac(100vh - 74px);
@@ -20,16 +30,6 @@
   position: fixed;
   height: 100%;
   z-index: 999;
-}
-
-#logo{
-  font-size: 25px;
-}
-
-.unite-logo{
-  display: flex;
-  margin-right: -19px;
-  margin-bottom: 10px;
 }
 
 #members__count {
@@ -184,26 +184,26 @@
   height: 100%;
 }
 
-#stream__box{ 
+#stream__box{
   background-color: #3f434a;
   height: 60vh;
   display: none;
 }
 
 #stream__box .video__container{
-  border: 2px solid black;
+  border: 2px solid #000;
   border-radius: 0;
   height: 100%!important;
-  width: 100%!important;
+  width:100%!important;
 
   background-size: 300px;
 }
 
 #stream__box video{
   border-radius: 0;
-} 
+}
 
-#streams__container {
+#streams__container{
   display: flex;
   flex-wrap: wrap;
   gap: 2em;
@@ -213,48 +213,67 @@
   margin-bottom: 225px;
 }
 
-.video__container {
+.video__container{
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #b366f9;
+  border:2px solid #b366f9;
   border-radius: 50%;
   cursor: pointer;
   overflow: hidden;
   height: 300px;
   width: 300px;
-  /* background-image: url("/images/logo.png");
+
+  background-image: url("/images/logo.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 75px; */
+  background-size: 75px;
 }
 
 .video-player{
   height: 100%;
   width: 100%;
-  /* min-width: fit-content; */
-  /* width: 100%; */
 }
 
 .video-player video{
   border-radius: 50%;
 }
 
+#join-btn{
+  background-color: #845695;
+  font-size: 18px; 
+  padding: 25px 50px;
+  border: none;
+  color: #fff;
+  position: fixed;
+  bottom: 1rem; 
+  border-radius: 8px;
+  left: 50%;
+  transform: translateX(-80%) ;
+  cursor: pointer;
+}
+
 @media (max-width: 1400px) {
-  .video__container {
+  .video__container{
     height: 200px;
     width: 200px;
   }
 }
 
 @media (max-width: 1200px) {
+  #join-btn {
+    font-size: 15px; 
+    padding: 17px 35px;
+    border: none;
+    color: #fff;
+    position: fixed;
+    bottom: 2rem; 
+    border-radius: 8px;
+    left: 35%;
+    transform: translateX(-70%);
+  }
   #members__container {
     display: none;
-  }
-
-  .video__container {
-    height: 100px;
-    width: 100px;
   }
 
   #members__button {
@@ -267,7 +286,19 @@
   }
 }
 
+
 @media (max-width: 980px) {
+  #join-btn {
+    font-size: 15px; 
+    padding: 17px 35px;
+    border: none;
+    color: #fff;
+    position: fixed;
+    bottom: 2rem; 
+    border-radius: 8px;
+    left: 35%;
+    transform: translateX(-70%);
+  }
   #stream__container {
     width: calc(100% - 20rem);
     left: 0;
@@ -282,11 +313,23 @@
 }
 
 @media (max-width: 768px) {
+
+  #join-btn {
+    font-size: 15px; 
+    padding: 17px 35px;
+    border: none;
+    color: #fff;
+    position: fixed;
+    bottom: 2rem; 
+    border-radius: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
   #stream__container {
     width: 100%;
   }
 
-  .video__container {
+  .video__container{
     height: 100px;
     width: 100px;
   }
@@ -354,16 +397,32 @@
   background-color: #845695;
 }
 
-#join-btn {
-  background-color: #845695;
-  font-size: 18px; 
-  padding: 25px 50px;
-  border: none;
-  color: #fff;
-  position: fixed;
-  bottom: 1rem; 
-  border-radius: 8px;
-  left: 50%;
-  transform: translateX(-80%) ;
-  cursor: pointer;
+
+
+@media (min-width: 769px) and (max-width: 980px) {
+  .stream__actions {
+    left: 30%; /* Adjusted left position */
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: 981px) and (max-width: 1023px) {
+  .stream__actions {
+    left: 30%; /* Adjusted left position */
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .stream__actions {
+    left: 30%; /* Adjusted left position */
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: 1440px) {
+  .stream__actions {
+    left: 50%; /* Adjusted left position */
+    transform: translateX(-70%);
+  }
 }

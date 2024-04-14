@@ -1,66 +1,163 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>UNITE LOBBY</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='styles/main.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='styles/lobby.css'>
-    <link rel="icon" href="images/Designer.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./js/main.js" defer type="module"></script>
+    <title>UNITE Login</title>
 </head>
 <body>
 
-        <header id="nav">
-       <div class="nav--list">
-            <a href="index.html"/>
-                <h3 id="logo">
-                    <img src="./images/Designer.png" class="unite-logo">
-                    <span>NITE</span>
-                </h3>
-            </a>
-       </div>
-
-        <div id="nav__links">
-            <a class="nav__link" href="/">
-                Lobby
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ede0e0" viewBox="0 0 24 24"><path d="M20 7.093v-5.093h-3v2.093l3 3zm4 5.907l-12-12-12 12h3v10h7v-5h4v5h7v-10h3zm-5 8h-3v-5h-8v5h-3v-10.26l7-6.912 7 6.99v10.182z"/></svg>
-            </a>
-            <a class="nav__link" id="create__room__btn" href="index.html">
-                Create Room
-               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ede0e0" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z"/></svg>
-            </a>
+    <!-- Start Landing Page -->
+    <div class="landing-page">
+        <header>
+            <div class="container">
+                <div class="nav--list">
+                    <a href="#top">
+                        <h3 id="logo">
+                            <img src="./images/Designer.png" class="unite-logo">
+                            <span>NITE</span>
+                        </h3>
+                    </a>
+                </div>
+                <ul class="links">
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#key-features-section">Features</a></li>
+                    <li><a href="#feedback">Feedback</a></li>
+                    <li id="google-loginBtn">Login</li>
+                </ul>
+            </div>
+        </header>
+        <div class="content">
+            <div class="container">
+                <div class="info">
+                    <h1>Video conferencing solutions with <span>UNITE</span></h1>
+                    <p>Empowering Connections, Uniting Worlds</p>
+                    <button class="scroll-down">Scroll Down</button>
+                </div>
+                <div class="image">
+                    <img src="./images/home-img.gif">
+                </div>
+            </div>
         </div>
-    </header>
 
-    <main id="room__lobby__container">
-        <div id="form__container">
-             <div id="form__container__header">
-                 <p>👋 Create or Join Room</p>
-             </div>
- 
- 
-            <form id="lobby__form">
- 
-                 <div class="form__field__wrapper">
-                     <label>Your Name</label>
-                     <input type="text" name="name" required placeholder="Enter your display name..." />
-                 </div>
- 
-                 <div class="form__field__wrapper">
-                     <label>Room Name</label>
-                     <input type="text" name="room" required placeholder="Enter room name..." />
-                 </div>
- 
-                 <div class="form__field__wrapper">
-                     <button type="submit">Go to Room 
-                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"/></svg>
-                    </button>
-                 </div>
-            </form>
-        </div>
-     </main>
-    
+        <!-- Button to Scroll to Top -->
+        <button class="scroll-to-top" onclick="scrollToTop()">
+            <i class='bx bxs-up-arrow-alt'></i>
+        </button>
+
+        <!-- Key Features Section -->
+        <section id="key-features-section" class="key-features-section">
+            <div class="container">
+                <h2>Key Features</h2>
+                <div class="key-features-cards">
+                    <div class="key-feature-card">
+                        <div class="key-feature-icon">
+                            <i class='bx bxs-check-circle'></i>
+                        </div>
+                        <h3>Create Meeting</h3>
+                        <p>Easy meeting setup</p>
+                    </div>
+                    <div class="key-feature-card">
+                        <div class="key-feature-icon">
+                            <i class='bx bxs-check-circle'></i>
+                        </div>
+                        <h3>Join Meeting</h3>
+                        <p>Seamless meeting access</p>
+                    </div>
+                    <div class="key-feature-card">
+                        <div class="key-feature-icon">
+                            <i class='bx bxs-check-circle'></i>
+                        </div>
+                        <h3>Screen Sharing</h3>
+                        <p>Effortless screen sharing</p>
+                    </div>
+                    <div class="key-feature-card">
+                        <div class="key-feature-icon">
+                            <i class='bx bxs-check-circle'></i>
+                        </div>
+                        <h3>Chat Support</h3>
+                        <p>Real-time chat integration</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- End Key Features Section -->
+
+        <!-- Feedback Form -->
+        <section id="feedback" class="feedback-section">
+            <div class="container">
+              <div class="feedback-content">
+                <h2>Feedback Form</h2>
+                <form action="https://formspree.io/f/xkndqjdy" class="contact_form grid" id="contact-form" method="POST">
+                  <div id="alert" class="alert_style"></div>
+                  <div class="contact_inputs grid">
+                    <div class="contact_content">
+                      <label for="name" class="contact_label">Your Name</label>
+                      <input type="text" id="name" name="name" class="contact_input" required>
+                    </div>
+                    <div class="contact_content">
+                      <label for="email" class="contact_label">Your Email</label>
+                      <input type="email" id="email" name="email" class="contact_input" required>
+                    </div>
+                    <div class="contact_content">
+                      <label for="message" class="contact_label">Your Feedback</label>
+                      <textarea id="message" name="message" class="contact_input message" style="resize: vertical;" required></textarea>
+                    </div>
+                  </div>
+                  <button type="submit" class="button button-flex">
+                    Submit
+                    <i class="uil uil-message button_icon"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </section>
+          
+
+        
+        <!-- End Feedback Form -->
+
+  <!-- Scroll Top -->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="uil uil-arrow-up scrollup_icon"></i>
+  </a>
+        
+    </div>
+    <!-- End Landing Page -->
+
+    <!-- Script for Smooth Scroll -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Function to scroll to top
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    <script>
+        // Function to handle scrolling to the next section
+        document.querySelector('.scroll-down').addEventListener('click', function() {
+            const nextSection = document.querySelector('#key-features-section');
+            nextSection.scrollIntoView({ behavior: 'smooth' });
+        });
+
+    </script>
+
 </body>
-<script type="text/javascript" src="js/lobby.js"></script>
 </html>

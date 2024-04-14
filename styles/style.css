@@ -1,0 +1,557 @@
+/* CSS styles */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/* Start Global Rules */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff; /* Text color */
+  background: linear-gradient(135deg, #3f434a, #845695); /* Gradient background */
+}
+a {
+  text-decoration: none;
+  color: #ffffff; /* Link color */
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+      width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+      width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+      width: 1170px;
+  }
+}
+/* End Global Rules */
+
+/* Start Landing Page */
+.landing-page header {
+  min-height: 80px;
+  display: flex;
+}
+@media (max-width: 767px) {
+  .landing-page header {
+      min-height: auto;
+      display: initial;
+  }
+}
+.landing-page header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .landing-page header .container {
+      flex-direction: column;
+      justify-content: center;
+  }
+}
+.landing-page header .logo {
+  color: #ffffff;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+@media (max-width: 767px) {
+  .landing-page header .logo {
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+}
+.landing-page header .links {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Push links to the right */
+}
+@media (max-width: 767px) {
+  .landing-page header .links {
+      text-align: center;
+      gap: 10px;
+      margin-left: 0; /* Remove margin for smaller screens */
+      margin-top: 20px; /* Adjust margin for smaller screens */
+  }
+}
+.landing-page header .links li {
+  margin-left: 10px; /* Reduce the gap between links */
+  cursor: pointer;
+  transition: .3s;
+}
+@media (max-width: 767px) {
+  .landing-page header .links li {
+      margin-left: 0; /* Remove margin for smaller screens */
+  }
+}
+.landing-page header .links li:last-child {
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: #6c63ff;
+}
+.landing-page header .links li:not(:last-child):hover {
+  color: #6c63ff;
+}
+.landing-page .content .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 140px;
+  min-height: calc(100vh - 80px);
+}
+@media (max-width: 767px) {
+  .landing-page .content .container {
+      gap: 0;
+      min-height: calc(100vh - 101px);
+      justify-content: center;
+      flex-direction: column-reverse;
+  }
+}
+@media (max-width: 767px) {
+  .landing-page .content .info {
+      text-align: center;
+      margin-bottom: 15px 
+  }
+}
+.landing-page .content .info h1 {
+  font-size: 60px; /* Increase heading size */
+  font-weight: bold; /* Make heading bold */
+  animation: fadeInUp 1s ease; /* Add animation */
+}
+.landing-page .content .info p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 20px; /* Increase paragraph size */
+}
+.landing-page .content .info button {
+  border: 0;
+  border-radius: 20px;
+  padding: 12px 30px;
+  margin-top: 30px;
+  cursor: pointer;
+  background-color: #6c63ff;
+}
+.landing-page .content .image img {
+  max-width: 100%;
+}
+/* End Landing Page */
+
+/* Start Key Features Section */
+.key-features-section {
+  padding: 50px 0; /* Reduced padding for smaller screens */
+  text-align: center;
+}
+
+.key-features-section h2 {
+  color: #f7ca18;
+  margin-bottom: 30px; /* Reduced margin for smaller screens */
+  font-size: 50px; /* Increase heading size */
+  font-weight: bold; /* Make heading bold */
+  animation: fadeInUp 1s ease; /* Add animation */
+  margin-bottom: 30px; /* Add margin bottom */
+}
+
+.key-features-cards {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap to next line on smaller screens */
+  justify-content: center;
+  gap: 20px; /* Reduced gap between cards for smaller screens */
+}
+
+.key-feature-card {
+  width: 100%; /* Full width for small screens */
+  max-width: calc(50% - 20px); /* Maximum width for larger screens */
+  padding: 20px; /* Reduced padding for smaller screens */
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.key-feature-card p,h3{
+  color: #000000;
+}
+
+.key-feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.key-feature-icon {
+  width: 60px; /* Reduced icon size for smaller screens */
+  height: 60px; /* Reduced icon size for smaller screens */
+  margin: 0 auto 10px auto; /* Reduced margin for smaller screens */
+  background-color: #6c63ff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.key-feature-icon i {
+  color: #ffffff;
+  font-size: 24px; /* Reduced icon size for smaller screens */
+}
+
+.key-feature-card h3 {
+  margin-bottom: 10px;
+}
+
+.key-feature-card p {
+  margin: 0;
+}
+/* End Key Features Section */
+
+/* Start Feedback Form Section */
+.feedback-section {
+  padding: 100px 0;
+  background-color: linear-gradient(135deg, #3f434a, #845695); /* Dark background color */
+}
+
+.feedback-content {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.feedback-content h2 {
+  color: #f7ca18;
+  margin-bottom: 50px;
+  font-size: 50px; /* Increased font size */
+  font-weight: bold;
+  animation: fadeInUp 1s ease; /* Add animation */
+}
+
+.feedback-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-content .form-group {
+  margin-bottom: 20px;
+}
+
+.feedback-content label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.feedback-content input[type="text"],
+.feedback-content input[type="email"],
+.feedback-content textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  background-color: #000000; /* Dark background color */
+  background: #ffffff;
+  color: #000000;
+}
+
+.feedback-content textarea {
+  color: #000000;
+  height: 150px;
+}
+
+.feedback-content button {
+  border: 0;
+  border-radius: 20px;
+  padding: 12px 30px;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #6c63ff;
+}
+
+.feedback-content button:hover {
+  background-color: #554dff;
+}
+/* End Feedback Form Section */
+
+/* Start Landing Page */
+.landing-page header .nav--list {
+  display: flex;
+  align-items: center;
+}
+.landing-page header .nav--list h3 {
+  display: flex;
+  align-items: center;
+}
+.landing-page header .nav--list h3 img {
+  height: 40px; /* Adjust as needed */
+  margin-right: 10px;
+}
+.landing-page header .nav--list h3 span {
+  font-size: 24px; /* Adjust as needed */
+}
+/* End Landing Page */
+
+/* Start Key Features Section */
+.key-features-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  gap: 20px; /* Reduced gap between cards for smaller screens */
+}
+
+.key-feature-card {
+  width: calc(50% - 10px); /* Adjust as needed */
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #ffffff; /* Dark background color */
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+.key-feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.key-feature-card h3 {
+  color: #000000;
+  margin-bottom: 10px;
+  font-weight: bold; /* Make heading bold */
+  transition: color 0.3s ease; /* Add transition effect */
+}
+
+.key-feature-card h3:hover {
+  color: #6c63ff; /* Change color on hover */
+}
+
+.key-feature-card p {
+  color: #000000;
+}
+/* End Key Features Section */
+
+/* Start Landing Page */
+.landing-page header .nav--list h3 span {
+  font-size: 24px; /* Adjust as needed */
+  color: #ffffff; /* White color */
+  margin-left: -12px;
+  margin-bottom: -8px;
+}
+/* End Landing Page */
+
+/* Background Gradient */
+.landing-page {
+  background: linear-gradient(135deg, #3f434a, #845695);
+  color: #fff;
+}
+
+/* Styling for Links */
+.links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px; /* Adjust padding for smaller screens */
+  margin: 0 5px; /* Adjust margin for smaller screens */
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Styling for Buttons */
+button {
+  background-color: #fff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation for Key Features Heading */
+.key-features-section h2 {
+  animation: scaleUpDown 0.5s ease;
+  margin-bottom: 4rem;
+}
+
+/* Animation for Feedback Form Heading */
+.feedback-content h2 {
+  animation: scaleUpDown 0.5s ease;
+}
+
+@keyframes scaleUpDown {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* Button to Scroll to Top */
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff;
+  color: #6c63ff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.scroll-to-top:hover {
+  background-color: #fff;
+}
+
+.landing-page .content .image img {
+  max-width: 100%;
+  border-radius: 50%; /* Make the image a perfect circle */
+  border: 4px solid #ffffff; /* Add a white border around the image */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
+  margin-left: 0px; /* Adjust the margin-left to move the image towards the right */
+}
+
+.info {
+  margin-top: -10px;
+}
+
+.info h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: rgb(255, 255, 255); /* White color */
+  margin-bottom: 20px;
+}
+
+.info h1 span {
+  color: #f7ca18; /* Purple color */
+}
+
+.info p {
+  font-size: 18px;
+  color: rgb(255, 255, 255); /* White color */
+  margin-bottom: 30px;
+}
+
+.info button {
+  border: none;
+  border-radius: 20px;
+  padding: 12px 30px;
+  cursor: pointer;
+  background-color: rgb(108, 99, 255); /* Purple color */
+  color: rgb(255, 255, 255); /* White color */
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.info button:hover {
+  background-color: rgb(85, 77, 255); /* Darker shade of purple */
+}
+
+/* CONTACT ME  */
+.contact_container {
+  row-gap: 3rem;
+}
+
+.contact_info {
+  display: flex;
+  margin-bottom: var(--mb-2);
+  align-items: flex-start;
+}
+
+.contact_icon {
+  font-size: 2rem;
+  color: var(--first-color);
+  margin-right: var(--mb-0-75);
+}
+
+.contact_title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+}
+
+.contact_subtitle {
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.contact_content {
+  background-color: var(--input-color);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem 0.25rem;
+  border: var(--first-color) 2px solid;
+}
+
+.contact_content.focusIn.valid {
+  border-color: #7fff00;
+}
+
+.contact_content.focusIn.invalid {
+  border-color: #ff4500;
+}
+
+.contact_input {
+  width: 100%;
+  background-color: var(--input-color);
+  color: #000000;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  border: none;
+  outline: none;
+  padding: 0.25rem 0.5rem 0.5rem 0;
+}
+
+.contact_label {
+  font-size: var(--smaller-font-size);
+  color: var(--title-color);
+}
+
+.alert_style {
+  text-align: center;
+  padding: 10px;
+  font-size: var(--small-font-size);
+  background-color: var(--first-color);
+  color: #000;
+  border-radius: 0.5rem;
+  display: none;
+}
+

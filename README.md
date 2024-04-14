@@ -19,16 +19,13 @@ Video conferencing solutions with `Unite` for real-time messaging and video call
   </a>
 </p>
 
-
-[![Generic badge](https://img.shields.io/badge/view-demo-blue?style=for-the-badge&label=View%20Demo%20Video)](https://youtu.be/OKKK1GOnlIU) 
-
 ## Features and Interfaces
 
 1. Landing Page and Feeback Form
-   - Seamless landing page with `Login with Google` button for user Login using Firebase Authentication 
+   - Seamless landing page with `Login` button for user Login using Firebase Authentication 
    - ![image](https://github.com/RAJA-2004/UNITE-VIDEO-CALL/blob/main/users/landing-page.png)
  
-   - One of the most important part of Agile is feedback, therefore the app has a feedback form in the footer 
+   - One of the most important part is feedback, therefore the app has a feedback form in the footer 
    - ![image](https://github.com/RAJA-2004/UNITE-VIDEO-CALL/blob/main/users/feedback.png)
 
 2. Home page 
@@ -36,14 +33,17 @@ Video conferencing solutions with `Unite` for real-time messaging and video call
    - ![image](https://github.com/RAJA-2004/UNITE-VIDEO-CALL/blob/main/users/lobby.png)
      
 3. Different Screen Modes
-   - Create and Join Meeting
+   - Round Shape Mode
    - ![image](https://github.com/RAJA-2004/UNITE-VIDEO-CALL/blob/main/users/single-user-join.png)
+   - Full Screen Mode
    - ![image](https://github.com/RAJA-2004/UNITE-VIDEO-CALL/blob/main/users/user-full-screen.png)
 
 4. Video calling & Persistent text chat
    - Screen Share options
    - ![image](https://github.com/RAJA-2004/UNITE-VIDEO-CALL/blob/main/users/screen-share.png)
    - ![image](https://github.com/RAJA-2004/UNITE-VIDEO-CALL/blob/main/users/shared-screen.png)
+   - Realtime Messaging and Active Participants
+   - ![image](https://github.com/RAJA-2004/UNITE-VIDEO-CALL/blob/main/users/user-comment.png)
 
 ### Tools and Languages: 
 <p align="left">

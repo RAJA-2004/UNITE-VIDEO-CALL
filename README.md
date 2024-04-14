@@ -26,55 +26,28 @@ Video conferencing solutions with `Unite` for real-time messaging and video call
 
 1. Landing Page and Feeback Form
    - Seamless landing page with `Login with Google` button for user Login using Firebase Authentication 
-   - ![image](https://user-images.githubusercontent.com/59837325/125426848-39db8eeb-3e84-424d-869c-5b344ba55ba1.png)
+   - ![image](https://github.com/RAJA-2004/UNITE-VIDEO-CALL/blob/main/users/landing-page.png)
  
    - One of the most important part of Agile is feedback, therefore the app has a feedback form in the footer 
-   - ![image](https://user-images.githubusercontent.com/59837325/125427701-f6aed5f3-ca93-4cf7-8480-40d42b87e46b.png)
-   
-   - Witness by journey of these 4 weeks, through a concise timeline on my landing page
-   - ![image](https://user-images.githubusercontent.com/59837325/125429293-88f38afe-be80-47ff-b662-2169d87bc476.png)
+   - ![image](https://github.com/RAJA-2004/UNITE-VIDEO-CALL/blob/main/users/feedback.png)
 
 2. Home page 
-   - Has a signout button with app cards for different features and left division shows the rooms created by user as well as recent rooms visited
+   - Create and Join Meeting
    - ![image](https://github.com/RAJA-2004/UNITE-VIDEO-CALL/blob/main/users/lobby.png)
-   
-   - Toggle between dark-light using the moon icon, according to your preference
-   - ![image](https://user-images.githubusercontent.com/59837325/125429518-79515f76-8392-413a-9d19-53894db9ee95.png)
-   
-   - Preview app cards for the application
-   - ![image](https://user-images.githubusercontent.com/59837325/125429888-3f23518a-e1c1-4500-a345-c5735cf1a8ff.png)
-   
-3. Create Meeting
-   - Create a room and invite people to join by copying the meeting code
-   - ![image](https://user-images.githubusercontent.com/59837325/125431140-7f0a92a8-ca4c-48b5-a91d-e53e69b12cb5.png)
+     
+3. Different Screen Modes
+   - Create and Join Meeting
+   - ![image](https://github.com/RAJA-2004/UNITE-VIDEO-CALL/blob/main/users/single-user-join.png)
+   - ![image](https://github.com/RAJA-2004/UNITE-VIDEO-CALL/blob/main/users/user-full-screen.png)
 
-   - Enter the common chat room that **persist the messages** using MongoDB 
-   - ![image](https://user-images.githubusercontent.com/59837325/125432255-d9e05582-5ae0-4b2f-8a07-dba9605a4b6d.png)
-
-4. Join Meeting
-   - Enter the copied meeting ID in a form and join the room with your loved ones. 
-   - ![image](https://user-images.githubusercontent.com/59837325/125438181-fd819177-cb36-45bb-a7dd-8acfa5e21b66.png)
-
-5. Video calling & Persistent text chat
+4. Video calling & Persistent text chat
    - Chat with your friends, family and professional peers before, during and after the meeting. 
    - ![image](https://user-images.githubusercontent.com/59837325/125486957-00bbd600-02ea-4f4f-b040-fc5d25db3251.png)
    - ![image](https://user-images.githubusercontent.com/59837325/125486640-4ff2bdb8-b2ec-40f8-96c1-4dbdae007af3.png)
    
    - Screen Share options
-   - ![image](https://user-images.githubusercontent.com/59837325/125486807-1b603597-eb1d-4758-9cb2-d1d34f8462c4.png)
-
-6. Schedule Meeting 
-   - Schedule Meeting with Google Calendar and invite people by just entering their email addresses and the app schedules a meet for you with a unique meeting ID as well!
-   - ![image](https://user-images.githubusercontent.com/59837325/125440936-e8d4141a-c7b8-4577-b5b0-4cba3d9e63ab.png)
-
-   - Mail sent on scheduling a meeting
-   - ![image](https://user-images.githubusercontent.com/59837325/125441421-ee5199d3-3165-43c0-88d6-f9328477dfe2.png)
-   - ![image](https://user-images.githubusercontent.com/59837325/125441435-d1a53547-bb63-4b81-97e1-95d005298bac.png)
-
-7. AI powered posture bot
-   - Using `Tf.js` posenet model, the bot notifies the user if they are sitting in a bad posture or too close to the screen. 
-   - Keep your health in check and use this functionality with and without even being in a meeting
-   - ![image](https://user-images.githubusercontent.com/59837325/125442368-2b7b4202-9f07-4d9a-9122-69b221a03ef9.png)
+   - ![image](https://github.com/RAJA-2004/UNITE-VIDEO-CALL/blob/main/users/screen-share.png)
+   - ![image](https://github.com/RAJA-2004/UNITE-VIDEO-CALL/blob/main/users/shared-screen.png)
 
 ## Tech stack
 

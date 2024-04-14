@@ -43,10 +43,3 @@ const isDarkMode = JSON.parse(localStorage.getItem('darkMode'));
 if (isDarkMode) {
     document.body.classList.add('dark-mode');
 }
-
-// Function to handle scrolling to the next section
-document.querySelector('.scroll-down').addEventListener('click', function() {
-  const nextSection = document.querySelector('#key-features-section');
-  nextSection.scrollIntoView({ behavior: 'smooth' });
-});
-

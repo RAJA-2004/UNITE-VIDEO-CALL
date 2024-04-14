@@ -65,19 +65,13 @@ Video conferencing solutions with `Unite` for real-time messaging and video call
 5. While testing the **Posture** bot, allow permissions for the camera and allow **notifications**, and **REFRESH** the page for changes to take effect. 
 6. Wait for the model to analyze, and check for **notifications** 
 
-## Instructions
-
-
-1. `git clone https://github.com/Apurva-tech/unite.git` 
-2. `cd ./unite`
-3. Install node dependencies 
-   - `npm install`
-4. Replace firebase API keys with your configurations
-5. Create a `.env` file 
-   - Add relevant credentials
-   - `cp .env.example .env` 
-5. `npm run dev`
-6. The app is now running at http://localhost:3030/landing 
+# Installation
+* 1 - clone repo 
+* 2 - Create an account on agora.io and create an app to generate an APP ID
+* 3 - Update APP ID, Temp Token and Channel Name in room_rtc.js
+```javascript
+let APP_ID = "YOU-APP-ID"
+```
 
 
 ## Useful Links
@@ -104,12 +98,3 @@ if (youEnjoyed) {
 ```
 
 -----------
-
-
-# Installation
-* 1 - clone repo 
-* 2 - Create an account on agora.io and create an app to generate an APP ID
-* 3 - Update APP ID, Temp Token and Channel Name in room_rtc.js
-```javascript
-let APP_ID = "YOU-APP-ID"
-```

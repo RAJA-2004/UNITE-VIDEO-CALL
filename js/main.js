@@ -2,12 +2,12 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebas
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyB_R4Hhba_EGjQJF72zUJi4CXlUttrFHcE",
-    authDomain: "login-b42f0.firebaseapp.com",
-    projectId: "login-b42f0",
-    storageBucket: "login-b42f0.appspot.com",
-    messagingSenderId: "78038357263",
-    appId: "1:78038357263:web:2c4b7f517073e7a1209a7a"
+    apiKey: "YOUR_KEY",
+    authDomain: "YOUR_ID",
+    projectId: "YOUR_ID",
+    storageBucket: "YOUR_ID",
+    messagingSenderId: "YOUR_ID",
+    appId: "YOUR_ID"
 };
 
 const app = initializeApp(firebaseConfig);

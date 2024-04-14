@@ -22,29 +22,49 @@ Video conferencing solutions with `Unite` for real-time messaging and video call
 ## Features and Interfaces
 
 1. Landing Page and Feeback Form
+   
    - Seamless landing page with `Login` button for user Login using Firebase Authentication 
-   - ![image](https://github.com/RAJA-2004/UNITE-VIDEO-CALL/blob/main/users/landing-page.png)
- 
-   - One of the most important part is feedback, therefore the app has a feedback form in the footer 
-   - ![image](https://github.com/RAJA-2004/UNITE-VIDEO-CALL/blob/main/users/feedback.png)
-
-2. Home page 
-   - Create and Join Meeting
-   - ![image](https://github.com/RAJA-2004/UNITE-VIDEO-CALL/blob/main/users/lobby.png)
+   
+     ![image](https://github.com/RAJA-2004/UNITE-VIDEO-CALL/blob/main/users/landing-page.png)
      
-3. Different Screen Modes
+   - One of the most important parts is feedback, therefore the app has a feedback form in the footer 
+   
+     ![image](https://github.com/RAJA-2004/UNITE-VIDEO-CALL/blob/main/users/feedback.png)
+
+3. Home page 
+   - Create and Join Meeting
+   
+     ![image](https://github.com/RAJA-2004/UNITE-VIDEO-CALL/blob/main/users/lobby.png)
+     
+4. Different Screen Modes
    - Round Shape Mode
-   - ![image](https://github.com/RAJA-2004/UNITE-VIDEO-CALL/blob/main/users/single-user-join.png)
+   
+     ![image](https://github.com/RAJA-2004/UNITE-VIDEO-CALL/blob/main/users/single-user-join.png)
+   
    - Full Screen Mode
-   - ![image](https://github.com/RAJA-2004/UNITE-VIDEO-CALL/blob/main/users/user-full-screen.png)
+   
+     ![image](https://github.com/RAJA-2004/UNITE-VIDEO-CALL/blob/main/users/user-full-screen.png)
 
-4. Video calling & Persistent text chat
+5. Video calling & Persistent text chat
+   - Chat with your friends, family, and professional peers.
+   
+     ![image](https://github.com/RAJA-2004/UNITE-VIDEO-CALL/blob/main/users/multiple-user.png)
+   
    - Screen Share options
-   - ![image](https://github.com/RAJA-2004/UNITE-VIDEO-CALL/blob/main/users/screen-share.png)
-   - ![image](https://github.com/RAJA-2004/UNITE-VIDEO-CALL/blob/main/users/shared-screen.png)
-   - Realtime Messaging and Active Participants
-   - ![image](https://github.com/RAJA-2004/UNITE-VIDEO-CALL/blob/main/users/user-comment.png)
+   
+     ![image](https://github.com/RAJA-2004/UNITE-VIDEO-CALL/blob/main/users/screen-share.png)
+     
+     ![image](https://github.com/RAJA-2004/UNITE-VIDEO-CALL/blob/main/users/shared-screen.png)
+     
+6. Realtime Messaging and Active Participants
+   
+     ![image](https://github.com/RAJA-2004/UNITE-VIDEO-CALL/blob/main/users/active-members-message.png)
 
+7. Automated Bot
+   - Gives a prompt whenever a user joins or leaves the meeting
+   
+     ![image](https://github.com/RAJA-2004/UNITE-VIDEO-CALL/blob/main/users/user-left.png)
+     
 ### Tools and Languages: 
 <p align="left">
   <a href="https://www.w3.org/html/" target="_blank">
@@ -75,13 +95,12 @@ Video conferencing solutions with `Unite` for real-time messaging and video call
 4. Make sure to turn on your camera after screen sharing
 
 # Installation
-* 1 - clone repo 
+* 1 - clone repo `https://github.com/RAJA-2004/UNITE-VIDEO-CALL`
 * 2 - Create an account on agora.io and create an app to generate an APP ID
 * 3 - Update APP ID, Temp Token and Channel Name in room_rtc.js
 ```javascript
-let APP_ID = "YOU-APP-ID"
+let APP_ID = "YOUr-APP-ID"
 ```
-
 ## Need help?
 
 Feel free to contact me on [LinkedIn](https://www.linkedin.com/in/rajadigvijaysingh/) 

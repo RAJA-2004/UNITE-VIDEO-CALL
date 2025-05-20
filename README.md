@@ -87,21 +87,7 @@ Video conferencing solutions with `Unite` for real-time messaging and video call
   </a>
 </p>
 
-## Points to remember while testing the app
-
-1. Allow **permissions** for camera and mic
-2. In case any **user is not broadcasted** it is probably due to server overload, **REFRESH** the window to solve this. 
-3. Make sure the **URL** is starting with https
-4. Make sure to turn on your camera after screen sharing
-
-# Installation
-* 1 - clone repo `https://github.com/RAJA-2004/UNITE-VIDEO-CALL`
-* 2 - Create an account on agora.io and create an app to generate an APP ID
-* 3 - Update APP ID, Temp Token and Channel Name in room_rtc.js
-```javascript
-let APP_ID = "YOUr-APP-ID"
-```
-## Need help?
+## Connect with me
 
 Feel free to contact me on [LinkedIn](https://www.linkedin.com/in/rajadigvijaysingh/) 
 
